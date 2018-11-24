@@ -23,9 +23,9 @@
         <div class="card mb-4 shadow-sm">
           <div class="card-body">
         
-           <h5>
+           <h4>
             <a href="#" class="text-dark">
-           {{$question->Title}}</a></h5>
+           {{$question->Title}}</a></h4>
              <span style="color: #666"> {{$question->Description}}</span>
 
               <br>
