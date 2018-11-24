@@ -11,10 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+
+//     return view('question');
+// });
+Route::post('/', 'QuestionController@store');
+Route::get('/', 'QuestionController@index');
+
+// Route::get('/', function()
+// {
+// 	return redirect('/index');
+// });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get('/new-question', 'QuestionController@create')->middleware('auth');;
+
